@@ -1,10 +1,18 @@
-function showPage(page) {
-    let pages = document.getElementsByClassName("page");
-    for (let i = 0; i < pages.length; i++) {
-      pages[i].style.display = "none";
+function smoothScroll(id, event) {
+  // event.preventDefault();
+  let element = document.getElementById(id);
+  let position = element.offsetTop;
+  let currentPosition = window.pageYOffset;
+  let distance = position - currentPosition;
+  let increment = distance/50;
+
+  function animation() {
+    currentPosition += increment;
+    window.scrollTo(0, currentPosition);
+    if (currentPosition < position) {
+      setTimeout(animation, 10);
     }
-    document.getElementById(page).style.display = "block";
   }
-  window.onload = function() {
-  showPage("home");
-  };
+
+  animation();
+}

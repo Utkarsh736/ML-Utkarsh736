@@ -1,81 +1,96 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-  }
-  
-  nav {
-    background-color: #555;
-    color: white;
-    text-align: center;
-    padding: 0.5em;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-left: 1em;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    margin: 1em;
-  }
-  
-  section {
-    margin-bottom: 2em;
-  }
-  
-  section h2 {
-    margin-bottom: 0.5em;
-  }
-  
-  section li {
-    margin-bottom: 0.5em;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 0.5em;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 0.5em;
-  }
-  
-  form input[type="text"], form input[type="email"], form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: transform 0.5s ease-in-out;
+}
 
-  footer {
-    margin-top: auto;
-  }
-  
-  .page {
-    display: none;
-  }
-  
+header {
+  background-color: #12232E;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+header a:hover {
+  color: #4DA8DA;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.job {
+  margin-bottom: 2em;
+}
+
+.job h3 {
+  margin-bottom: 0.5em;
+}
+
+.job p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.job ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project h3 {
+  margin-bottom: 0.5em;
+}
+
+.project p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.project ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.education {
+  margin-bottom: 2em;
+}
+
+.education h3 {
+  margin-bottom: 0.5em;
+}
+
+.education p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.info {
+  margin-bottom: 2em;
+}
+
+.info p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: #203647;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
