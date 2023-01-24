@@ -13,84 +13,41 @@ header {
   padding: 1em;
 }
 
-header a {
+nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1em;
-}
-
-header a:hover {
-  color: #4DA8DA;
+  margin-right: 1em;
+  transition: color 0.5s ease-in-out;
 }
 
 .container {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
+  text-align: center;
+  padding: 2em;
 }
 
-.job {
-  margin-bottom: 2em;
-}
-
-.job h3 {
-  margin-bottom: 0.5em;
-}
-
-.job p {
-  font-size: 0.8em;
-  margin-bottom: 1em;
-}
-
-.job ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.container h2 {
+  color: #007CC7;
 }
 
 .project {
-  margin-bottom: 2em;
+  background-color: #EEFBFB;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .project h3 {
-  margin-bottom: 0.5em;
-}
-
-.project p {
-  font-size: 0.8em;
-  margin-bottom: 1em;
-}
-
-.project ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.education {
-  margin-bottom: 2em;
-}
-
-.education h3 {
-  margin-bottom: 0.5em;
-}
-
-.education p {
-  font-size: 0.8em;
-  margin-bottom: 1em;
-}
-
-.info {
-  margin-bottom: 2em;
-}
-
-.info p {
-  font-size: 0.8em;
-  margin-bottom: 1em;
+  color: #203647;
 }
 
 footer {
-  background-color: #203647;
+  background-color: #12232E;
   color: white;
   text-align: center;
   padding: 1em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
